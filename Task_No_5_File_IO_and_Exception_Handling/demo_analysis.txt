@@ -1,0 +1,6 @@
+File Analysis Results
+--------------------
+
+Total Lines: 8
+Total Words: 29
+Empty Lines: 3

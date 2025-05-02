@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
@@ -97,7 +97,6 @@ namespace CSharpFundamentals
                 ["Total Lines"] = lines.Length,
                 ["Total Words"] = 0,
                 ["Empty Lines"] = 0,
-                ["Lines with Numbers"] = 0
             };
 
             foreach (string line in lines)
@@ -111,12 +110,7 @@ namespace CSharpFundamentals
                 {
                     statistics["Empty Lines"]++;
                 }
-
-                // Count lines with numbers
-                if (line.Any(char.IsDigit))
-                {
-                    statistics["Lines with Numbers"]++;
-                }
+                
             }
 
             return statistics;
@@ -128,7 +122,6 @@ namespace CSharpFundamentals
             {
                 writer.WriteLine("File Analysis Results");
                 writer.WriteLine("--------------------");
-                writer.WriteLine($"Analysis Date: {DateTime.Now}");
                 writer.WriteLine();
 
                 foreach (var stat in statistics)

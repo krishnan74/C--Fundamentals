@@ -1,0 +1,8 @@
+This is a sample text file.
+It contains multiple lines of text.
+
+Some lines are empty.
+
+This file is used to test the file processing application.
+
+End of file.
